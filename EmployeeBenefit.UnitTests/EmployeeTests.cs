@@ -2,7 +2,7 @@
 using EmployeeBenefits.Domain;
 using NUnit.Framework;
 
-namespace EmployeeBenefit.UnitTests
+namespace EmployeeBenefits.UnitTests
 {
 	[TestFixture]
 	public class EmployeeTests

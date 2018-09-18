@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeBenefits.Domain", "EmployeeBenefits.Domain\EmployeeBenefits.Domain.csproj", "{E77735FB-4FE2-4D9A-867E-E97E71BDDCA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeBenefit.UnitTests", "EmployeeBenefit.UnitTests\EmployeeBenefit.UnitTests.csproj", "{8CAEA109-3F4E-4014-BBC0-D0624469663B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeBenefits.UnitTests", "EmployeeBenefit.UnitTests\EmployeeBenefits.UnitTests.csproj", "{8CAEA109-3F4E-4014-BBC0-D0624469663B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeBenefits.Persistence", "EmployeeBenefits.Persistence\EmployeeBenefits.Persistence.csproj", "{9BC438C6-7878-49AD-A581-C702B2EDC3E2}"
 EndProject

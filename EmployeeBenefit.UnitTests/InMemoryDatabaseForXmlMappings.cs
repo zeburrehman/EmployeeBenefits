@@ -8,7 +8,7 @@ using NHibernate.Driver;
 using NHibernate.Tool.hbm2ddl;
 using Environment = NHibernate.Cfg.Environment;
 
-namespace EmployeeBenefit.UnitTests
+namespace EmployeeBenefits.UnitTests
 {
 	public class InMemoryDatabaseForXmlMappings : IDisposable
 	{

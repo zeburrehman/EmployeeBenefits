@@ -4,7 +4,7 @@ using EmployeeBenefits.Domain;
 using NHibernate;
 using NUnit.Framework;
 
-namespace EmployeeBenefit.UnitTests
+namespace EmployeeBenefits.UnitTests
 {
 	[TestFixture]
 	public class EmployeeMappingsTests

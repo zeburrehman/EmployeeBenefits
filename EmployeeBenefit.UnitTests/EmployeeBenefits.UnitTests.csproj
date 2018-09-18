@@ -8,8 +8,8 @@
     <ProjectGuid>{8CAEA109-3F4E-4014-BBC0-D0624469663B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EmployeeBenefit.UnitTests</RootNamespace>
-    <AssemblyName>EmployeeBenefit.UnitTests</AssemblyName>
+    <RootNamespace>EmployeeBenefits.UnitTests</RootNamespace>
+    <AssemblyName>EmployeeBenefits.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
