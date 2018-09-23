@@ -18,5 +18,6 @@ namespace EmployeeBenefits.Domain
 		public virtual Address ResidentialAddress { get; set; }
 		public virtual ICollection<Benefit> Benefits { get; set; }
 		public virtual ICollection<Leave> Leaves { get; set; }
+		public virtual ICollection<Community> Communities { get; set; }
 	}
 }

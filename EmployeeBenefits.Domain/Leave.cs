@@ -1,6 +1,6 @@
 ﻿namespace EmployeeBenefits.Domain
 {
-	public class Leave
+	public class Leave: Benefit
 	{
 		public virtual LeaveType Type { get; set; }
 		public virtual int AvailableEntitlement { get; set; }

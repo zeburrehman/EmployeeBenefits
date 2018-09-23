@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Address.cs" />
     <Compile Include="Benefit.cs" />
+    <Compile Include="Community.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EntityBase.cs" />
     <Compile Include="Enumerations.cs" />
