@@ -184,5 +184,37 @@ namespace EmployeeBenefits.UnitTests
 				Assert.That(employee.Communities.First().Members.First().EmployeeNumber, Is.EqualTo("125"));
 			}
 		}
+
+		[Test]
+		public void MapsSkillsEnhancementAllowance()
+		{
+			object id = 0;
+			using (var transaction = session.BeginTransaction())
+			{
+				id = session.Save(new SkillsEnhancementAllowance
+				{
+					Name = "Skill Enhacement Allowance",
+					Description = "Allowance for employees so that their skill enhancement trainings are paid for",
+					Entitlement = 1000,
+					RemainingEntitlement = 250
+				});
+				transaction.Commit();
+			}
+			session.Clear();
+			using (var transaction = session.BeginTransaction())
+			{
+				var benefit = session.Get<Benefit>(id);
+				var skillsEnhancementAllowance = benefit as SkillsEnhancementAllowance;
+				Assert.That(skillsEnhancementAllowance, Is.Not.Null);
+				if (skillsEnhancementAllowance != null)
+				{
+					Assert.That(skillsEnhancementAllowance.Name, Is.EqualTo("Skill Enhacement Allowance"));
+					Assert.That(skillsEnhancementAllowance.Description, Is.EqualTo("Allowance for employees so that their skill enhancement trainings are paid for"));
+					Assert.That(skillsEnhancementAllowance.Entitlement, Is.EqualTo(1000));
+					Assert.That(skillsEnhancementAllowance.RemainingEntitlement, Is.EqualTo(250));
+				}
+				transaction.Commit();
+			}
+		}
 	}
 }

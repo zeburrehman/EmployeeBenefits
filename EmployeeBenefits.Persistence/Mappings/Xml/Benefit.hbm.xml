@@ -4,8 +4,32 @@
                    namespace="EmployeeBenefits.Domain">
   <class name="Benefit">
     <id name="Id" generator="hilo"/>
+    <!--<discriminator column="BenefitType" type="String" />-->
     <property name="Name"/>
     <property name="Description"/>
     <many-to-one name="Employee" class="Employee" column="Employee_Id"/>
+
+    <!--discriminator-value="SEA"-->
+    <joined-subclass name="SkillsEnhancementAllowance">
+      <key column="Id"/>
+      <property name="RemainingEntitlement"/>
+      <property name="Entitlement"/>
+    </joined-subclass>
+
+    <!--discriminator-value="STL"-->
+    <joined-subclass name="SeasonTicketLoan">
+      <key column="Id"/>
+      <property name="Amount"/>
+      <property name="MonthlyInstallment"/>
+      <property name="StartDate"/>
+      <property name="EndDate"/>
+    </joined-subclass>
+
+    <!--discriminator-value="LVE"-->
+    <joined-subclass name="Leave">
+      <key column="Id"/>
+      <property name="AvailableEntitlement"/>
+      <property name="RemainingEntitlement"/>
+    </joined-subclass>
   </class>
 </hibernate-mapping>

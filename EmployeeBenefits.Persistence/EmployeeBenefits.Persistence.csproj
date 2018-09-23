@@ -79,15 +79,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Mappings\Xml\SkillsEnhancementAllowance.hbm.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Mappings\Xml\Leave.hbm.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Mappings\Xml\SeasonTicketLoan.hbm.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Mappings\Xml\Address.hbm.xml" />
   </ItemGroup>
   <ItemGroup>
